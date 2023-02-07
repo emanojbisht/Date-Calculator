@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Days Calculator</title>
+    <!-- fevicon -->
+    <link rel="shortcut icon" href="Images/star.png" type="image/x-icon" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <main id="main">
+      <section id="main-section">
+        <h1 class="heading">Week | Days Betweeen Two Dates</h1>
+        <p class="summary">
+          Find the number of years, months, weeks, and days between dates.
+        </p>
+        <div class="Div-date">
+          <p class="p-line">Start Date :</p>
+          <input type="date" id="startDate" class="input" />
+          <p class="p-line">End Date :</p>
+          <input type="date" id="endDate" class="input" />
+          <input type="button" id="btn" value="Calculate" />
+        </div>
+
+        <section class="sectionbelow hidden">
+          <div class="sectionDiv1">
+            <div class="DivFrom">
+              <p class="p-line fromheading">From:</p>
+              <p class="fromEl p-line fromsummary"></p>
+            </div>
+            <div class="DivTo">
+              <p class="p-line toheading">To:</p>
+              <p class="toEl p-line tosummary"></p>
+            </div>
+          </div>
+          <div>
+            <p class="days-print p-line"></p>
+            <p class="totaldays p-line"></p>
+          </div>
+        </section>
+      </section>
+      <hr />
+      <h2 class="seperation-heading">Add to or Subtract from a Date</h2>
+      <hr />
+      <section id="bottom-section">
+        <p class="hidden p-cal p-line"></p>
+        <p class="p-line">Start Date :</p>
+        <input type="date" id="chooseDate" class="input" />
+        <div class="numberSelection">
+          <div>
+            <select id="add-remove" name="select">
+              <option value="add">+</option>
+              <option value="remove">-</option>
+            </select>
+          </div>
+          <div>
+            <input type="number" class="aRyears numInput" />
+            <span class="p-line">years</span>
+            <input type="number" class="aRmonths numInput" />
+            <span class="p-line">months</span>
+            <input type="number" class="aRweeks numInput" />
+            <span class="p-line">weeks</span>
+            <input type="number" class="aRdays numInput" />
+            <span class="p-line">days</span>
+          </div>
+        </div>
+        <input type="button" id="btn-cal" value="Calculate" />
+      </section>
+    </main>
+    <footer></footer>
+    <!-- javascript -->
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>

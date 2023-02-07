@@ -1,0 +1,135 @@
+body {
+  background-color: #c9f4aa;
+}
+#main {
+}
+#main-section,
+#bottom-section {
+  margin: 15px 20%;
+  border-radius: 15px;
+  border: 3px solid #e5fdd1;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.Div-date {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+.heading {
+  font-size: 40px;
+  color: #205e61;
+}
+.summary {
+  font-size: 20px;
+  color: #205e61;
+}
+.p-line {
+  font-size: 20px;
+  color: #205e61;
+  margin-bottom: 1px;
+}
+.input {
+  font-size: 20px;
+  height: 50px;
+  width: 60%;
+  border-radius: 5px;
+  border: 2px solid cyan;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.label {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#btn {
+  cursor: pointer;
+  font-size: 20px;
+  display: inline;
+  padding: 15px 5px;
+  border-radius: 10px;
+  width: 60%;
+  background-color: blue;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.sectionbelow {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.hidden {
+  display: none;
+}
+.DivFrom,
+.DivTo {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+.seperation-heading {
+  text-align: center;
+  color: #205e61;
+}
+
+.numberSelection {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+#add-remove {
+  padding: 10px;
+  font-size: 20px;
+  color: #205e61;
+  border: 2px solid cyan;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.numInput {
+  font-size: 20px;
+  height: 30px;
+  width: 70%;
+  border-radius: 5px;
+  border: 2px solid cyan;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#btn-cal {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline;
+  padding: 15px 5px;
+  border-radius: 10px;
+  width: 60%;
+  background-color: blue;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+  #main-section,
+  #bottom-section {
+    margin: 0 5%;
+  }
+  .input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #main-section,
+  #bottom-section {
+    margin: 0 5%;
+  }
+  .input {
+    width: 100%;
+  }
+  .DivFrom,
+  .DivTo {
+    display: grid;
+    grid-template-columns: 35% auto;
+  }
+}
